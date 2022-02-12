@@ -41,6 +41,5 @@ $(document).ready(function () {
       $("figure.second-slide").css({ display: "none" }, 500);
       $("figure.first-slide").css({ display: "flex" }, 500);
     }
-    console.log(typeof e.key);
   });
 });
