@@ -1,0 +1,97 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 25px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+}
+.img-container {
+  background-image: url(../images/pattern-bg.svg);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+blockquote {
+  background-image: url(../images/pattern-quotes.svg);
+  background-size: 14%;
+  background-repeat: no-repeat;
+  background-position: top left 20%;
+}
+figure {
+  background-image: url(../images/pattern-curve.svg);
+  background-size: 38%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+img {
+  width: 75%;
+}
+
+.img-container {
+  left: 40%;
+}
+blockquote {
+  width: 130%;
+  right: 135%;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.arrows-container {
+  width: 60px;
+  height: 30px;
+  bottom: -5%;
+  left: 20%;
+  background-color: white;
+}
+
+.arrows-container img {
+  width: 10px;
+  height: 15px;
+  padding: 1px;
+  z-index: 22;
+}
+.first-slide {
+  display: flex;
+}
+.second-slide {
+  display: none;
+}
+
+@media (min-width: 375px) and (max-width: 991px) {
+  .img-container {
+    left: unset;
+    position: unset !important;
+  }
+  blockquote {
+    position: unset !important;
+    width: unset;
+    right: unset;
+  }
+  .mt-4,
+  .pt-5 {
+    margin-top: unset !important;
+    padding-top: unset !important;
+    text-align: center;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+  }
+  .arrows-container::after,
+  .arrows-container::before {
+    background-size: 9px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  img {
+    width: 85%;
+    padding-top: 20px;
+  }
+}
