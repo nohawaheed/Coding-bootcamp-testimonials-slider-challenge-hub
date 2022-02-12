@@ -79,7 +79,7 @@ blockquote {
     padding-top: unset !important;
     text-align: center;
   }
-  figcaption {
+  .title {
     display: flex;
     flex-direction: column;
   }
